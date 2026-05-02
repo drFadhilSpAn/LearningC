@@ -1,0 +1,27 @@
+﻿#include <stdio.h>
+#include <stdbool.h>
+
+int main() {
+    int N=20;
+    int T[21] = {65, 24, 56, 138, 15, 45, 11, 28, 202, 23, 78, 67, 44, 83, 193, 96, 69, 25, 42, 70};
+    int X=42;
+    bool Found=false;
+    int i=1;
+    int IX;
+
+    while (i<= N && !Found) {
+        if (T[i]==X) {
+            Found=true;}
+        else {i=i+1;
+        }
+    }
+
+    if (Found == true){
+        IX=i;}
+    else {IX=0;}
+
+    if (IX != 0) {
+        printf("%d\n", true);
+    }
+    else {printf("%d\n", false);}
+}
